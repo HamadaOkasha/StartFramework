@@ -25,12 +25,16 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
+            "scripts": [ 
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          },   
+          "configurations": {   
+            "production": {  
               "budgets": [
                 {
                   "type": "initial",
@@ -43,7 +47,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all"    
             },
             "development": {
               "buildOptimizer": false,
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
