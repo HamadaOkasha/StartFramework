@@ -5,7 +5,7 @@
     color: white !important;
 }
 .activeLink{
-    background-color:#1abc9c !important;
+   background-color:#1abc9c !important; 
     color: white !important;
     border-radius: 5px;
 }
