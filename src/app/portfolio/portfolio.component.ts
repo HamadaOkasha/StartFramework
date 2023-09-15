@@ -20,23 +20,18 @@ export class PortfolioComponent {
 
   SrcImag(e:Event){
     this.selectedImage = (e.target as HTMLImageElement).src;
-    console.log(this.selectedImage );
+   // console.log(this.selectedImage );
     this.isLayerVisible=true;  
   }
-hideLayer(e:Event){
-//console.log(e.target)
-(e.target as HTMLImageElement).src == this.selectedImage?null: this.isLayerVisible=false;
-  //e.target===img?null: this.isLayerVisible=false;  
+hideLayer(e:Event,image:HTMLImageElement){
 
+  console.log("2222222")
+  console.log(e.target)
+  console.log(image)
+e.target == image?null: this.isLayerVisible=false;
+
+//(e.target as HTMLImageElement).src == this.selectedImage?null: this.isLayerVisible=false;
 }
-//  toggleLayer(imageUrl: string) {,img:HTMLImageElement
-//    this.selectedImage = imageUrl;
-//    this.isLayerVisible = true;
-//  }
 
-// hideLayer() {
-//   this.isLayerVisible = false;
-//  // this.selectedImage = null;
-// }
 
 }
