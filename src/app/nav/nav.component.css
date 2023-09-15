@@ -9,3 +9,6 @@
     color: white !important;
     border-radius: 5px;
 }
+nav{
+    transition: all 1s;
+}

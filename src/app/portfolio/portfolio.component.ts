@@ -18,11 +18,17 @@ export class PortfolioComponent {
     './../../assets/images/port2.png',
   ];
 
-  SrcImag(e:Event){
-    this.selectedImage = (e.target as HTMLImageElement).src;
+  SrcImag(img:any){
+    this.selectedImage = img.src;
    // console.log(this.selectedImage );
     this.isLayerVisible=true;  
   }
+
+// SrcImag(e:Event){
+//   this.selectedImage = (e.target as HTMLImageElement).src;
+//  // console.log(this.selectedImage );
+//   this.isLayerVisible=true;  
+// }
 hideLayer(e:Event,image:HTMLImageElement){
 
   console.log("2222222")
